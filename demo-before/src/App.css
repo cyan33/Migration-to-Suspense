@@ -1,0 +1,184 @@
+body {
+  background-color: #fff;
+  color: black;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+/* App.js */
+
+#root {
+  width: 70%;
+  position: relative;
+  top: 70px;
+  margin: 0 auto;
+}
+
+.coldpedia-title {
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 900;
+}
+
+.app {
+  margin-bottom: 100px;
+}
+
+.app nav {
+  text-align: center;
+}
+
+.app nav a {
+  display: inline-block;
+  margin: 0 20px;
+  padding: 10px 0;
+  font-size: 1.3rem;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  cursor: pointer;
+  color: #000;
+  text-decoration: none;
+}
+
+.app nav a.active {
+  border-bottom: 2px solid black;
+}
+
+/* Profile.js */
+
+.profile-picture img {
+  width: 100%;
+}
+
+p {
+  line-height: 1.5;
+}
+
+/* TabContainer.js */
+
+.tab-container {
+  margin-top: 30px;
+}
+
+/* Spinner.js */
+
+.spinner {
+  text-align: center;
+}
+
+/* Article.css */
+.article {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid gray;
+}
+
+.article:last-of-type {
+  border-bottom: none;
+}
+
+.article h3 {
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/* Network */
+
+.network {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  padding: .5rem 3rem;
+  padding-left: 3rem;
+  font-size: 1.3rem;
+  background-color: #000;
+}
+
+.network label {
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+
+
+/* Mouse click animation */
+div.clickEffect {
+  position: fixed;
+  box-sizing: border-box;
+  border-style: solid;
+  border-color: black;
+  border-radius: 50%;
+  animation: clickEffect .4s ease-out;
+  z-index: 99;
+}
+
+@keyframes clickEffect {
+  0% {
+    opacity: 1;
+    width: 0.5em;
+    height: 0.5em;
+    margin: -0.25em;
+    border-width: 0.5em;
+  }
+  100% {
+    opacity: 0.2;
+    width: 7em;
+    height: 7em;
+    margin: -3.5em;
+    border-width: 0.3em;
+  }
+}
+
+/* Albums */
+
+.album {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.album-cover-container {
+  margin-right: 20px;
+}
+
+.album-cover-container img {
+  width: 140px;
+}
+
+.album h3 {
+  cursor: pointer;
+}
+
+.not-visible-container {
+  padding-top: 30px;
+}
+
+.click-visible {
+  text-align: center;
+}
+
+.click-visible button {
+  width: 130px;
+  height: 40px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: #051626;
+  border-color: #051626;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* Songs popularity */
+
+.songs-popularity h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+

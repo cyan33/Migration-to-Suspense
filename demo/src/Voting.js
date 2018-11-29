@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component, lazy } from 'react';
 
-import SongsPopularity from './SongsPopularity';
+const SongsPopularity = lazy(() => import('./SongsPopularity'));
 
 class Voting extends Component {
   state = {

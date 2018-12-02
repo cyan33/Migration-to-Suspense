@@ -21,11 +21,11 @@ function App() {
         <NavLink to="voting">Voting</NavLink>
       </nav>
       <TabContainer>
-        <Suspense fallback={<Spinner />}>
+        <Suspense maxDuration={500} fallback={<Spinner />}>
           <Router>
-              <Profile path="/" />
-              <Albums path="albums" />
-              <Voting path="voting" />
+            <Profile path="/" />
+            <Albums path="albums" />
+            <Voting path="voting" />
           </Router>
         </Suspense>
       </TabContainer>
